@@ -53,7 +53,13 @@ namespace IntroExercises
 
         public static int Count(int[] array, int value, int startIndex, int endIndex)
         {
-            return 0;
+            int count = 0;
+            for (int i = startIndex; i <= endIndex; i++)
+            {
+                if (array[i] == value)
+                    count++;
+            }
+            return count;
         }
 
         //TODO #5
